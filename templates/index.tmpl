@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>My Posts</title>
+</head>
+<body>
+	<ul>
+		{{range .}}
+			<li>{{.Title}} by {{.Author.Forename}} {{.Author.Surname}}</li>
+		{{end}}
+	</ul>
+</body>
+</html>
